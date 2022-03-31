@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<configuracion>
+<listaCiudades>
+    <ciudad>
+        <nombre filas="4" columnas="20">Guatemala</nombre>
+        <fila numero="1">"********************"</fila>
+        <fila numero="2">"*** **             *"</fila>
+        <fila numero="3">"*** *****E*****C****"</fila>
+        <fila numero="4">"*** ***** ***** ***R"</fila>
+    </ciudad>
+</listaCiudades>
+</configuracion>
