@@ -1,6 +1,7 @@
 from tkinter.filedialog import askopenfilename
 import pathlib
 import time
+from typing import List
 from ListaCiudades import listaCiudades
 from ListaRobots import listaRobots
 from xml.dom import minidom
@@ -102,12 +103,15 @@ def MiniDom(ruta):
                     capacidadR = 0
 
                 nuevaCiudad.robots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
+            
+        ListaRobots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
 
-    print("----- CIUDADES AGREGADAS -----")
+    print("\n  ----- CIUDADES AGREGADAS -----")
     ListaCiudades.mostrarCiudades()
 
+    print("\n ----- ROBOTS AGREGADAS -----")
     nuevaCiudad.robots.mostrarRobots()
-    print("\n----- ROBOTS AGREGADAS -----")
+    
 
     
 
@@ -116,7 +120,7 @@ opcion = 0
 
 while not salir:
     print('')
-    print('¡BIENVENIDO! \n 1. Cargar archivo. \n 2. Mostrar pisos. \n 3. Ver piso. \n 4. Salir.')
+    print('¡BIENVENIDO! \n 1. Cargar archivo. \n 2. Mostrar lista de ciudades.  \n 3. Mostrar lista de robots. \n 4. Ver una ciudad. \n 5. Salir.')
 
     opcion = seleccionarOpt("¿Qué opción quiere seleccionar? ")
 
@@ -131,15 +135,28 @@ while not salir:
         
     elif opcion == 2:
         try:
-            print("\nLista de pisos disponibles: ")
-            
+            print("\nLista de ciudades: ")
+            ListaCiudades.mostrarCiudades()
         except:
             print("¿Ya cargó un archivo al sistema?")
 
     elif opcion == 3:
-            name = input("\nIngrese el nombre del piso que manejará: ")           
+            print("\nLista de robots: ")
+            
+            ListaRobots.mostrarRobots()
 
     elif opcion == 4:
+            name = input("\nIngrese el nombre de la ciudad que verá: ")
+            ciudad = ListaCiudades.buscarCiudad(name)
+
+            if ciudad == None:
+                print("Asegúrese de que el nombre ingresado sea correcto.")
+            
+            else:
+                print("\n", ciudad.getNombre())
+                ciudad.matriz.graficarMatriz(ciudad.getNombre())
+
+    elif opcion == 5:
         print("Saliendo... :b")
         time.sleep(0.5)
         salir = True

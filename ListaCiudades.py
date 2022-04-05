@@ -21,6 +21,20 @@ class listaCiudades():
     def mostrarCiudades(self):
         tmp = self.primero
         while tmp != None:
-            print("\n(",tmp.nFilas, ",", tmp.nColumnas, ") - > ", tmp.nombre, "\nNúmero de unidades civiles: ", tmp.noUCiviles, "\nNúmero de recursos de la ciudad: ", tmp.noRecursos)
+            print("▷ ", tmp.nombre, "- > (",tmp.nFilas, ",", tmp.nColumnas, ")\nNúmero de unidades civiles: ", tmp.noUCiviles, "\nNúmero de recursos de la ciudad: ", tmp.noRecursos, "\n")
             tmp = tmp.siguiente
     
+    def buscarCiudad(self, name):
+        tmp = self.primero
+        while tmp is not None:
+            if tmp.nombre == name:
+                return tmp
+            tmp = tmp.getSiguiente()
+    
+    def buscarMatrizCiudad(self, name):
+        tmp = self.primero
+        while tmp is not None:
+            if tmp.nombre == name:
+                return tmp.matriz.graficarMatriz()
+            tmp = tmp.getSiguiente()
+

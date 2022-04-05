@@ -21,6 +21,6 @@ class listaRobots():
     def mostrarRobots(self):
         tmp = self.primero
         for i in range(self.size):
-            print(i+1, ". Robot",tmp.tipo, ": ", tmp.nombre)
+            print(i+1, "|",tmp.tipo, "-", tmp.nombre)
             tmp = tmp.siguiente
         

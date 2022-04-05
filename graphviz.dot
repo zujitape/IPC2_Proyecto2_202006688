@@ -1,0 +1,1308 @@
+digraph Matriz{
+ node[fontname="IMPACT", shape = box fillcolor="#FFEDBB" color=white style=filled, border = white]nodesep=0.05; ranksep=0.05;fontname="IMPACT"
+ subgraph cluster_p{label = "Atlantis"
+ labelloc="b" 
+ bgcolor = white 
+ edge[dir = "none" style = invisible]root[label="", fillcolor=white]F1[label = "1", group = 1, fillcolor = white]
+F2[label = "2", group = 1, fillcolor = white]
+F3[label = "3", group = 1, fillcolor = white]
+F4[label = "4", group = 1, fillcolor = white]
+F5[label = "5", group = 1, fillcolor = white]
+F6[label = "6", group = 1, fillcolor = white]
+F7[label = "7", group = 1, fillcolor = white]
+F8[label = "8", group = 1, fillcolor = white]
+F9[label = "9", group = 1, fillcolor = white]
+F10[label = "10", group = 1, fillcolor = white]
+F11[label = "11", group = 1, fillcolor = white]
+F12[label = "12", group = 1, fillcolor = white]
+F13[label = "13", group = 1, fillcolor = white]
+F14[label = "14", group = 1, fillcolor = white]
+F15[label = "15", group = 1, fillcolor = white]
+F16[label = "16", group = 1, fillcolor = white]
+F17[label = "17", group = 1, fillcolor = white]
+F18[label = "18", group = 1, fillcolor = white]
+F19[label = "19", group = 1, fillcolor = white]
+F20[label = "20", group = 1, fillcolor = white]
+F1-> F2
+F2-> F3
+F3-> F4
+F4-> F5
+F5-> F6
+F6-> F7
+F7-> F8
+F8-> F9
+F9-> F10
+F10-> F11
+F11-> F12
+F12-> F13
+F13-> F14
+F14-> F15
+F15-> F16
+F16-> F17
+F17-> F18
+F18-> F19
+F19-> F20
+C1[label = "1", group = 2, fillcolor = white]
+C2[label = "2", group = 3, fillcolor = white]
+C3[label = "3", group = 4, fillcolor = white]
+C4[label = "4", group = 5, fillcolor = white]
+C5[label = "5", group = 6, fillcolor = white]
+C6[label = "6", group = 7, fillcolor = white]
+C7[label = "7", group = 8, fillcolor = white]
+C8[label = "8", group = 9, fillcolor = white]
+C9[label = "9", group = 10, fillcolor = white]
+C10[label = "10", group = 11, fillcolor = white]
+C11[label = "11", group = 12, fillcolor = white]
+C12[label = "12", group = 13, fillcolor = white]
+C13[label = "13", group = 14, fillcolor = white]
+C14[label = "14", group = 15, fillcolor = white]
+C15[label = "15", group = 16, fillcolor = white]
+C16[label = "16", group = 17, fillcolor = white]
+C17[label = "17", group = 18, fillcolor = white]
+C18[label = "18", group = 19, fillcolor = white]
+C19[label = "19", group = 20, fillcolor = white]
+C20[label = "20", group = 21, fillcolor = white]
+C1-> C2
+C2-> C3
+C3-> C4
+C4-> C5
+C5-> C6
+C6-> C7
+C7-> C8
+C8-> C9
+C9-> C10
+C10-> C11
+C11-> C12
+C12-> C13
+C13-> C14
+C14-> C15
+C15-> C16
+C16-> C17
+C17-> C18
+C18-> C19
+C19-> C20
+{rank = same; root, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20}
+root -> F1
+root -> C1
+celdaF1_C1[label="", group = 2 , fillcolor = "black"]
+celdaF1_C2[label="", group = 3 , fillcolor = "black"]
+celdaF1_C3[label="", group = 4 , fillcolor = "black"]
+celdaF1_C4[label="", group = 5 , fillcolor = "black"]
+celdaF1_C5[label="", group = 6 , fillcolor = "black"]
+celdaF1_C6[label="", group = 7 , fillcolor = "black"]
+celdaF1_C7[label="", group = 8 , fillcolor = "black"]
+celdaF1_C8[label="", group = 9 , fillcolor = "black"]
+celdaF1_C9[label="", group = 10 , fillcolor = "black"]
+celdaF1_C10[label="", group = 11 , fillcolor = "black"]
+celdaF1_C11[label="", group = 12 , fillcolor = "black"]
+celdaF1_C12[label="", group = 13 , fillcolor = "black"]
+celdaF1_C13[label="", group = 14 , fillcolor = "#70ad47"]
+celdaF1_C14[label="", group = 15 , fillcolor = "black"]
+celdaF1_C15[label="", group = 16 , fillcolor = "black"]
+celdaF1_C16[label="", group = 17 , fillcolor = "black"]
+celdaF1_C17[label="", group = 18 , fillcolor = "black"]
+celdaF1_C18[label="", group = 19 , fillcolor = "black"]
+celdaF1_C19[label="", group = 20 , fillcolor = "black"]
+celdaF1_C20[label="", group = 21 , fillcolor = "black"]
+celdaF2_C1[label="", group = 2 , fillcolor = "black"]
+celdaF2_C2[label="", group = 3 , fillcolor = "black"]
+celdaF2_C3[label="", group = 4 , fillcolor = "white"]
+celdaF2_C4[label="", group = 5 , fillcolor = "white"]
+celdaF2_C5[label="", group = 6 , fillcolor = "#2d71b1"]
+celdaF2_C6[label="", group = 7 , fillcolor = "white"]
+celdaF2_C7[label="", group = 8 , fillcolor = "white"]
+celdaF2_C8[label="", group = 9 , fillcolor = "white"]
+celdaF2_C9[label="", group = 10 , fillcolor = "white"]
+celdaF2_C10[label="", group = 11 , fillcolor = "white"]
+celdaF2_C11[label="", group = 12 , fillcolor = "black"]
+celdaF2_C12[label="", group = 13 , fillcolor = "black"]
+celdaF2_C13[label="", group = 14 , fillcolor = "white"]
+celdaF2_C14[label="", group = 15 , fillcolor = "black"]
+celdaF2_C15[label="", group = 16 , fillcolor = "black"]
+celdaF2_C16[label="", group = 17 , fillcolor = "white"]
+celdaF2_C17[label="", group = 18 , fillcolor = "white"]
+celdaF2_C18[label="", group = 19 , fillcolor = "#636161"]
+celdaF2_C19[label="", group = 20 , fillcolor = "black"]
+celdaF2_C20[label="", group = 21 , fillcolor = "black"]
+celdaF3_C1[label="", group = 2 , fillcolor = "black"]
+celdaF3_C2[label="", group = 3 , fillcolor = "black"]
+celdaF3_C3[label="", group = 4 , fillcolor = "white"]
+celdaF3_C4[label="", group = 5 , fillcolor = "black"]
+celdaF3_C5[label="", group = 6 , fillcolor = "black"]
+celdaF3_C6[label="", group = 7 , fillcolor = "black"]
+celdaF3_C7[label="", group = 8 , fillcolor = "black"]
+celdaF3_C8[label="", group = 9 , fillcolor = "black"]
+celdaF3_C9[label="", group = 10 , fillcolor = "black"]
+celdaF3_C10[label="", group = 11 , fillcolor = "white"]
+celdaF3_C11[label="", group = 12 , fillcolor = "black"]
+celdaF3_C12[label="", group = 13 , fillcolor = "black"]
+celdaF3_C13[label="", group = 14 , fillcolor = "white"]
+celdaF3_C14[label="", group = 15 , fillcolor = "black"]
+celdaF3_C15[label="", group = 16 , fillcolor = "black"]
+celdaF3_C16[label="", group = 17 , fillcolor = "white"]
+celdaF3_C17[label="", group = 18 , fillcolor = "black"]
+celdaF3_C18[label="", group = 19 , fillcolor = "black"]
+celdaF3_C19[label="", group = 20 , fillcolor = "black"]
+celdaF3_C20[label="", group = 21 , fillcolor = "black"]
+celdaF4_C1[label="", group = 2 , fillcolor = "black"]
+celdaF4_C2[label="", group = 3 , fillcolor = "black"]
+celdaF4_C3[label="", group = 4 , fillcolor = "white"]
+celdaF4_C4[label="", group = 5 , fillcolor = "white"]
+celdaF4_C5[label="", group = 6 , fillcolor = "#c30a09"]
+celdaF4_C6[label="", group = 7 , fillcolor = "black"]
+celdaF4_C7[label="", group = 8 , fillcolor = "black"]
+celdaF4_C8[label="", group = 9 , fillcolor = "black"]
+celdaF4_C9[label="", group = 10 , fillcolor = "black"]
+celdaF4_C10[label="", group = 11 , fillcolor = "white"]
+celdaF4_C11[label="", group = 12 , fillcolor = "black"]
+celdaF4_C12[label="", group = 13 , fillcolor = "black"]
+celdaF4_C13[label="", group = 14 , fillcolor = "white"]
+celdaF4_C14[label="", group = 15 , fillcolor = "black"]
+celdaF4_C15[label="", group = 16 , fillcolor = "black"]
+celdaF4_C16[label="", group = 17 , fillcolor = "white"]
+celdaF4_C17[label="", group = 18 , fillcolor = "black"]
+celdaF4_C18[label="", group = 19 , fillcolor = "black"]
+celdaF4_C19[label="", group = 20 , fillcolor = "black"]
+celdaF4_C20[label="", group = 21 , fillcolor = "black"]
+celdaF5_C1[label="", group = 2 , fillcolor = "black"]
+celdaF5_C2[label="", group = 3 , fillcolor = "black"]
+celdaF5_C3[label="", group = 4 , fillcolor = "black"]
+celdaF5_C4[label="", group = 5 , fillcolor = "black"]
+celdaF5_C5[label="", group = 6 , fillcolor = "white"]
+celdaF5_C6[label="", group = 7 , fillcolor = "black"]
+celdaF5_C7[label="", group = 8 , fillcolor = "black"]
+celdaF5_C8[label="", group = 9 , fillcolor = "black"]
+celdaF5_C9[label="", group = 10 , fillcolor = "black"]
+celdaF5_C10[label="", group = 11 , fillcolor = "white"]
+celdaF5_C11[label="", group = 12 , fillcolor = "white"]
+celdaF5_C12[label="", group = 13 , fillcolor = "white"]
+celdaF5_C13[label="", group = 14 , fillcolor = "white"]
+celdaF5_C14[label="", group = 15 , fillcolor = "white"]
+celdaF5_C15[label="", group = 16 , fillcolor = "#c30a09"]
+celdaF5_C16[label="", group = 17 , fillcolor = "white"]
+celdaF5_C17[label="", group = 18 , fillcolor = "black"]
+celdaF5_C18[label="", group = 19 , fillcolor = "black"]
+celdaF5_C19[label="", group = 20 , fillcolor = "black"]
+celdaF5_C20[label="", group = 21 , fillcolor = "black"]
+celdaF6_C1[label="", group = 2 , fillcolor = "black"]
+celdaF6_C2[label="", group = 3 , fillcolor = "black"]
+celdaF6_C3[label="", group = 4 , fillcolor = "black"]
+celdaF6_C4[label="", group = 5 , fillcolor = "black"]
+celdaF6_C5[label="", group = 6 , fillcolor = "white"]
+celdaF6_C6[label="", group = 7 , fillcolor = "black"]
+celdaF6_C7[label="", group = 8 , fillcolor = "black"]
+celdaF6_C8[label="", group = 9 , fillcolor = "black"]
+celdaF6_C9[label="", group = 10 , fillcolor = "black"]
+celdaF6_C10[label="", group = 11 , fillcolor = "white"]
+celdaF6_C11[label="", group = 12 , fillcolor = "black"]
+celdaF6_C12[label="", group = 13 , fillcolor = "black"]
+celdaF6_C13[label="", group = 14 , fillcolor = "white"]
+celdaF6_C14[label="", group = 15 , fillcolor = "black"]
+celdaF6_C15[label="", group = 16 , fillcolor = "black"]
+celdaF6_C16[label="", group = 17 , fillcolor = "white"]
+celdaF6_C17[label="", group = 18 , fillcolor = "black"]
+celdaF6_C18[label="", group = 19 , fillcolor = "black"]
+celdaF6_C19[label="", group = 20 , fillcolor = "#2d71b1"]
+celdaF6_C20[label="", group = 21 , fillcolor = "black"]
+celdaF7_C1[label="", group = 2 , fillcolor = "#70ad47"]
+celdaF7_C2[label="", group = 3 , fillcolor = "white"]
+celdaF7_C3[label="", group = 4 , fillcolor = "white"]
+celdaF7_C4[label="", group = 5 , fillcolor = "white"]
+celdaF7_C5[label="", group = 6 , fillcolor = "white"]
+celdaF7_C6[label="", group = 7 , fillcolor = "black"]
+celdaF7_C7[label="", group = 8 , fillcolor = "black"]
+celdaF7_C8[label="", group = 9 , fillcolor = "black"]
+celdaF7_C9[label="", group = 10 , fillcolor = "black"]
+celdaF7_C10[label="", group = 11 , fillcolor = "white"]
+celdaF7_C11[label="", group = 12 , fillcolor = "black"]
+celdaF7_C12[label="", group = 13 , fillcolor = "black"]
+celdaF7_C13[label="", group = 14 , fillcolor = "white"]
+celdaF7_C14[label="", group = 15 , fillcolor = "black"]
+celdaF7_C15[label="", group = 16 , fillcolor = "black"]
+celdaF7_C16[label="", group = 17 , fillcolor = "white"]
+celdaF7_C17[label="", group = 18 , fillcolor = "black"]
+celdaF7_C18[label="", group = 19 , fillcolor = "black"]
+celdaF7_C19[label="", group = 20 , fillcolor = "white"]
+celdaF7_C20[label="", group = 21 , fillcolor = "black"]
+celdaF8_C1[label="", group = 2 , fillcolor = "black"]
+celdaF8_C2[label="", group = 3 , fillcolor = "black"]
+celdaF8_C3[label="", group = 4 , fillcolor = "black"]
+celdaF8_C4[label="", group = 5 , fillcolor = "white"]
+celdaF8_C5[label="", group = 6 , fillcolor = "black"]
+celdaF8_C6[label="", group = 7 , fillcolor = "black"]
+celdaF8_C7[label="", group = 8 , fillcolor = "black"]
+celdaF8_C8[label="", group = 9 , fillcolor = "black"]
+celdaF8_C9[label="", group = 10 , fillcolor = "black"]
+celdaF8_C10[label="", group = 11 , fillcolor = "white"]
+celdaF8_C11[label="", group = 12 , fillcolor = "black"]
+celdaF8_C12[label="", group = 13 , fillcolor = "black"]
+celdaF8_C13[label="", group = 14 , fillcolor = "white"]
+celdaF8_C14[label="", group = 15 , fillcolor = "black"]
+celdaF8_C15[label="", group = 16 , fillcolor = "black"]
+celdaF8_C16[label="", group = 17 , fillcolor = "white"]
+celdaF8_C17[label="", group = 18 , fillcolor = "black"]
+celdaF8_C18[label="", group = 19 , fillcolor = "black"]
+celdaF8_C19[label="", group = 20 , fillcolor = "white"]
+celdaF8_C20[label="", group = 21 , fillcolor = "black"]
+celdaF9_C1[label="", group = 2 , fillcolor = "black"]
+celdaF9_C2[label="", group = 3 , fillcolor = "black"]
+celdaF9_C3[label="", group = 4 , fillcolor = "black"]
+celdaF9_C4[label="", group = 5 , fillcolor = "white"]
+celdaF9_C5[label="", group = 6 , fillcolor = "white"]
+celdaF9_C6[label="", group = 7 , fillcolor = "white"]
+celdaF9_C7[label="", group = 8 , fillcolor = "white"]
+celdaF9_C8[label="", group = 9 , fillcolor = "white"]
+celdaF9_C9[label="", group = 10 , fillcolor = "#c30a09"]
+celdaF9_C10[label="", group = 11 , fillcolor = "white"]
+celdaF9_C11[label="", group = 12 , fillcolor = "black"]
+celdaF9_C12[label="", group = 13 , fillcolor = "black"]
+celdaF9_C13[label="", group = 14 , fillcolor = "white"]
+celdaF9_C14[label="", group = 15 , fillcolor = "black"]
+celdaF9_C15[label="", group = 16 , fillcolor = "black"]
+celdaF9_C16[label="", group = 17 , fillcolor = "white"]
+celdaF9_C17[label="", group = 18 , fillcolor = "white"]
+celdaF9_C18[label="", group = 19 , fillcolor = "white"]
+celdaF9_C19[label="", group = 20 , fillcolor = "white"]
+celdaF9_C20[label="", group = 21 , fillcolor = "black"]
+celdaF10_C1[label="", group = 2 , fillcolor = "black"]
+celdaF10_C2[label="", group = 3 , fillcolor = "black"]
+celdaF10_C3[label="", group = 4 , fillcolor = "black"]
+celdaF10_C4[label="", group = 5 , fillcolor = "white"]
+celdaF10_C5[label="", group = 6 , fillcolor = "black"]
+celdaF10_C6[label="", group = 7 , fillcolor = "black"]
+celdaF10_C7[label="", group = 8 , fillcolor = "white"]
+celdaF10_C8[label="", group = 9 , fillcolor = "black"]
+celdaF10_C9[label="", group = 10 , fillcolor = "black"]
+celdaF10_C10[label="", group = 11 , fillcolor = "white"]
+celdaF10_C11[label="", group = 12 , fillcolor = "black"]
+celdaF10_C12[label="", group = 13 , fillcolor = "black"]
+celdaF10_C13[label="", group = 14 , fillcolor = "white"]
+celdaF10_C14[label="", group = 15 , fillcolor = "black"]
+celdaF10_C15[label="", group = 16 , fillcolor = "black"]
+celdaF10_C16[label="", group = 17 , fillcolor = "white"]
+celdaF10_C17[label="", group = 18 , fillcolor = "black"]
+celdaF10_C18[label="", group = 19 , fillcolor = "black"]
+celdaF10_C19[label="", group = 20 , fillcolor = "black"]
+celdaF10_C20[label="", group = 21 , fillcolor = "black"]
+celdaF11_C1[label="", group = 2 , fillcolor = "black"]
+celdaF11_C2[label="", group = 3 , fillcolor = "black"]
+celdaF11_C3[label="", group = 4 , fillcolor = "black"]
+celdaF11_C4[label="", group = 5 , fillcolor = "white"]
+celdaF11_C5[label="", group = 6 , fillcolor = "black"]
+celdaF11_C6[label="", group = 7 , fillcolor = "black"]
+celdaF11_C7[label="", group = 8 , fillcolor = "white"]
+celdaF11_C8[label="", group = 9 , fillcolor = "black"]
+celdaF11_C9[label="", group = 10 , fillcolor = "black"]
+celdaF11_C10[label="", group = 11 , fillcolor = "#636161"]
+celdaF11_C11[label="", group = 12 , fillcolor = "black"]
+celdaF11_C12[label="", group = 13 , fillcolor = "black"]
+celdaF11_C13[label="", group = 14 , fillcolor = "white"]
+celdaF11_C14[label="", group = 15 , fillcolor = "black"]
+celdaF11_C15[label="", group = 16 , fillcolor = "black"]
+celdaF11_C16[label="", group = 17 , fillcolor = "white"]
+celdaF11_C17[label="", group = 18 , fillcolor = "black"]
+celdaF11_C18[label="", group = 19 , fillcolor = "black"]
+celdaF11_C19[label="", group = 20 , fillcolor = "black"]
+celdaF11_C20[label="", group = 21 , fillcolor = "black"]
+celdaF12_C1[label="", group = 2 , fillcolor = "black"]
+celdaF12_C2[label="", group = 3 , fillcolor = "black"]
+celdaF12_C3[label="", group = 4 , fillcolor = "black"]
+celdaF12_C4[label="", group = 5 , fillcolor = "white"]
+celdaF12_C5[label="", group = 6 , fillcolor = "black"]
+celdaF12_C6[label="", group = 7 , fillcolor = "black"]
+celdaF12_C7[label="", group = 8 , fillcolor = "white"]
+celdaF12_C8[label="", group = 9 , fillcolor = "black"]
+celdaF12_C9[label="", group = 10 , fillcolor = "black"]
+celdaF12_C10[label="", group = 11 , fillcolor = "black"]
+celdaF12_C11[label="", group = 12 , fillcolor = "black"]
+celdaF12_C12[label="", group = 13 , fillcolor = "black"]
+celdaF12_C13[label="", group = 14 , fillcolor = "white"]
+celdaF12_C14[label="", group = 15 , fillcolor = "black"]
+celdaF12_C15[label="", group = 16 , fillcolor = "black"]
+celdaF12_C16[label="", group = 17 , fillcolor = "white"]
+celdaF12_C17[label="", group = 18 , fillcolor = "black"]
+celdaF12_C18[label="", group = 19 , fillcolor = "black"]
+celdaF12_C19[label="", group = 20 , fillcolor = "black"]
+celdaF12_C20[label="", group = 21 , fillcolor = "black"]
+celdaF13_C1[label="", group = 2 , fillcolor = "#636161"]
+celdaF13_C2[label="", group = 3 , fillcolor = "white"]
+celdaF13_C3[label="", group = 4 , fillcolor = "white"]
+celdaF13_C4[label="", group = 5 , fillcolor = "white"]
+celdaF13_C5[label="", group = 6 , fillcolor = "white"]
+celdaF13_C6[label="", group = 7 , fillcolor = "white"]
+celdaF13_C7[label="", group = 8 , fillcolor = "white"]
+celdaF13_C8[label="", group = 9 , fillcolor = "black"]
+celdaF13_C9[label="", group = 10 , fillcolor = "black"]
+celdaF13_C10[label="", group = 11 , fillcolor = "white"]
+celdaF13_C11[label="", group = 12 , fillcolor = "black"]
+celdaF13_C12[label="", group = 13 , fillcolor = "black"]
+celdaF13_C13[label="", group = 14 , fillcolor = "white"]
+celdaF13_C14[label="", group = 15 , fillcolor = "black"]
+celdaF13_C15[label="", group = 16 , fillcolor = "black"]
+celdaF13_C16[label="", group = 17 , fillcolor = "white"]
+celdaF13_C17[label="", group = 18 , fillcolor = "black"]
+celdaF13_C18[label="", group = 19 , fillcolor = "black"]
+celdaF13_C19[label="", group = 20 , fillcolor = "black"]
+celdaF13_C20[label="", group = 21 , fillcolor = "black"]
+celdaF14_C1[label="", group = 2 , fillcolor = "black"]
+celdaF14_C2[label="", group = 3 , fillcolor = "black"]
+celdaF14_C3[label="", group = 4 , fillcolor = "white"]
+celdaF14_C4[label="", group = 5 , fillcolor = "black"]
+celdaF14_C5[label="", group = 6 , fillcolor = "black"]
+celdaF14_C6[label="", group = 7 , fillcolor = "black"]
+celdaF14_C7[label="", group = 8 , fillcolor = "white"]
+celdaF14_C8[label="", group = 9 , fillcolor = "white"]
+celdaF14_C9[label="", group = 10 , fillcolor = "white"]
+celdaF14_C10[label="", group = 11 , fillcolor = "white"]
+celdaF14_C11[label="", group = 12 , fillcolor = "white"]
+celdaF14_C12[label="", group = 13 , fillcolor = "white"]
+celdaF14_C13[label="", group = 14 , fillcolor = "white"]
+celdaF14_C14[label="", group = 15 , fillcolor = "#c30a09"]
+celdaF14_C15[label="", group = 16 , fillcolor = "white"]
+celdaF14_C16[label="", group = 17 , fillcolor = "white"]
+celdaF14_C17[label="", group = 18 , fillcolor = "white"]
+celdaF14_C18[label="", group = 19 , fillcolor = "white"]
+celdaF14_C19[label="", group = 20 , fillcolor = "white"]
+celdaF14_C20[label="", group = 21 , fillcolor = "#70ad47"]
+celdaF15_C1[label="", group = 2 , fillcolor = "black"]
+celdaF15_C2[label="", group = 3 , fillcolor = "black"]
+celdaF15_C3[label="", group = 4 , fillcolor = "white"]
+celdaF15_C4[label="", group = 5 , fillcolor = "black"]
+celdaF15_C5[label="", group = 6 , fillcolor = "black"]
+celdaF15_C6[label="", group = 7 , fillcolor = "black"]
+celdaF15_C7[label="", group = 8 , fillcolor = "white"]
+celdaF15_C8[label="", group = 9 , fillcolor = "black"]
+celdaF15_C9[label="", group = 10 , fillcolor = "black"]
+celdaF15_C10[label="", group = 11 , fillcolor = "black"]
+celdaF15_C11[label="", group = 12 , fillcolor = "white"]
+celdaF15_C12[label="", group = 13 , fillcolor = "black"]
+celdaF15_C13[label="", group = 14 , fillcolor = "black"]
+celdaF15_C14[label="", group = 15 , fillcolor = "black"]
+celdaF15_C15[label="", group = 16 , fillcolor = "black"]
+celdaF15_C16[label="", group = 17 , fillcolor = "black"]
+celdaF15_C17[label="", group = 18 , fillcolor = "black"]
+celdaF15_C18[label="", group = 19 , fillcolor = "white"]
+celdaF15_C19[label="", group = 20 , fillcolor = "black"]
+celdaF15_C20[label="", group = 21 , fillcolor = "black"]
+celdaF16_C1[label="", group = 2 , fillcolor = "black"]
+celdaF16_C2[label="", group = 3 , fillcolor = "black"]
+celdaF16_C3[label="", group = 4 , fillcolor = "white"]
+celdaF16_C4[label="", group = 5 , fillcolor = "black"]
+celdaF16_C5[label="", group = 6 , fillcolor = "black"]
+celdaF16_C6[label="", group = 7 , fillcolor = "black"]
+celdaF16_C7[label="", group = 8 , fillcolor = "white"]
+celdaF16_C8[label="", group = 9 , fillcolor = "black"]
+celdaF16_C9[label="", group = 10 , fillcolor = "black"]
+celdaF16_C10[label="", group = 11 , fillcolor = "black"]
+celdaF16_C11[label="", group = 12 , fillcolor = "white"]
+celdaF16_C12[label="", group = 13 , fillcolor = "black"]
+celdaF16_C13[label="", group = 14 , fillcolor = "black"]
+celdaF16_C14[label="", group = 15 , fillcolor = "white"]
+celdaF16_C15[label="", group = 16 , fillcolor = "white"]
+celdaF16_C16[label="", group = 17 , fillcolor = "white"]
+celdaF16_C17[label="", group = 18 , fillcolor = "black"]
+celdaF16_C18[label="", group = 19 , fillcolor = "white"]
+celdaF16_C19[label="", group = 20 , fillcolor = "black"]
+celdaF16_C20[label="", group = 21 , fillcolor = "black"]
+celdaF17_C1[label="", group = 2 , fillcolor = "black"]
+celdaF17_C2[label="", group = 3 , fillcolor = "black"]
+celdaF17_C3[label="", group = 4 , fillcolor = "#2d71b1"]
+celdaF17_C4[label="", group = 5 , fillcolor = "black"]
+celdaF17_C5[label="", group = 6 , fillcolor = "black"]
+celdaF17_C6[label="", group = 7 , fillcolor = "black"]
+celdaF17_C7[label="", group = 8 , fillcolor = "#c30a09"]
+celdaF17_C8[label="", group = 9 , fillcolor = "black"]
+celdaF17_C9[label="", group = 10 , fillcolor = "black"]
+celdaF17_C10[label="", group = 11 , fillcolor = "black"]
+celdaF17_C11[label="", group = 12 , fillcolor = "white"]
+celdaF17_C12[label="", group = 13 , fillcolor = "white"]
+celdaF17_C13[label="", group = 14 , fillcolor = "white"]
+celdaF17_C14[label="", group = 15 , fillcolor = "white"]
+celdaF17_C15[label="", group = 16 , fillcolor = "black"]
+celdaF17_C16[label="", group = 17 , fillcolor = "white"]
+celdaF17_C17[label="", group = 18 , fillcolor = "white"]
+celdaF17_C18[label="", group = 19 , fillcolor = "white"]
+celdaF17_C19[label="", group = 20 , fillcolor = "black"]
+celdaF17_C20[label="", group = 21 , fillcolor = "black"]
+celdaF18_C1[label="", group = 2 , fillcolor = "black"]
+celdaF18_C2[label="", group = 3 , fillcolor = "black"]
+celdaF18_C3[label="", group = 4 , fillcolor = "white"]
+celdaF18_C4[label="", group = 5 , fillcolor = "black"]
+celdaF18_C5[label="", group = 6 , fillcolor = "black"]
+celdaF18_C6[label="", group = 7 , fillcolor = "black"]
+celdaF18_C7[label="", group = 8 , fillcolor = "black"]
+celdaF18_C8[label="", group = 9 , fillcolor = "black"]
+celdaF18_C9[label="", group = 10 , fillcolor = "black"]
+celdaF18_C10[label="", group = 11 , fillcolor = "black"]
+celdaF18_C11[label="", group = 12 , fillcolor = "white"]
+celdaF18_C12[label="", group = 13 , fillcolor = "black"]
+celdaF18_C13[label="", group = 14 , fillcolor = "black"]
+celdaF18_C14[label="", group = 15 , fillcolor = "black"]
+celdaF18_C15[label="", group = 16 , fillcolor = "black"]
+celdaF18_C16[label="", group = 17 , fillcolor = "black"]
+celdaF18_C17[label="", group = 18 , fillcolor = "black"]
+celdaF18_C18[label="", group = 19 , fillcolor = "white"]
+celdaF18_C19[label="", group = 20 , fillcolor = "black"]
+celdaF18_C20[label="", group = 21 , fillcolor = "black"]
+celdaF19_C1[label="", group = 2 , fillcolor = "black"]
+celdaF19_C2[label="", group = 3 , fillcolor = "black"]
+celdaF19_C3[label="", group = 4 , fillcolor = "white"]
+celdaF19_C4[label="", group = 5 , fillcolor = "white"]
+celdaF19_C5[label="", group = 6 , fillcolor = "white"]
+celdaF19_C6[label="", group = 7 , fillcolor = "white"]
+celdaF19_C7[label="", group = 8 , fillcolor = "white"]
+celdaF19_C8[label="", group = 9 , fillcolor = "white"]
+celdaF19_C9[label="", group = 10 , fillcolor = "white"]
+celdaF19_C10[label="", group = 11 , fillcolor = "white"]
+celdaF19_C11[label="", group = 12 , fillcolor = "white"]
+celdaF19_C12[label="", group = 13 , fillcolor = "black"]
+celdaF19_C13[label="", group = 14 , fillcolor = "black"]
+celdaF19_C14[label="", group = 15 , fillcolor = "black"]
+celdaF19_C15[label="", group = 16 , fillcolor = "black"]
+celdaF19_C16[label="", group = 17 , fillcolor = "black"]
+celdaF19_C17[label="", group = 18 , fillcolor = "black"]
+celdaF19_C18[label="", group = 19 , fillcolor = "#2d71b1"]
+celdaF19_C19[label="", group = 20 , fillcolor = "black"]
+celdaF19_C20[label="", group = 21 , fillcolor = "black"]
+celdaF20_C1[label="", group = 2 , fillcolor = "black"]
+celdaF20_C2[label="", group = 3 , fillcolor = "black"]
+celdaF20_C3[label="", group = 4 , fillcolor = "black"]
+celdaF20_C4[label="", group = 5 , fillcolor = "black"]
+celdaF20_C5[label="", group = 6 , fillcolor = "black"]
+celdaF20_C6[label="", group = 7 , fillcolor = "black"]
+celdaF20_C7[label="", group = 8 , fillcolor = "#70ad47"]
+celdaF20_C8[label="", group = 9 , fillcolor = "black"]
+celdaF20_C9[label="", group = 10 , fillcolor = "black"]
+celdaF20_C10[label="", group = 11 , fillcolor = "black"]
+celdaF20_C11[label="", group = 12 , fillcolor = "black"]
+celdaF20_C12[label="", group = 13 , fillcolor = "black"]
+celdaF20_C13[label="", group = 14 , fillcolor = "black"]
+celdaF20_C14[label="", group = 15 , fillcolor = "black"]
+celdaF20_C15[label="", group = 16 , fillcolor = "black"]
+celdaF20_C16[label="", group = 17 , fillcolor = "black"]
+celdaF20_C17[label="", group = 18 , fillcolor = "black"]
+celdaF20_C18[label="", group = 19 , fillcolor = "black"]
+celdaF20_C19[label="", group = 20 , fillcolor = "black"]
+celdaF20_C20[label="", group = 21 , fillcolor = "black"]
+
+F1 -> celdaF1_C1
+celdaF1_C1 -> celdaF1_C2
+celdaF1_C2 -> celdaF1_C3
+celdaF1_C3 -> celdaF1_C4
+celdaF1_C4 -> celdaF1_C5
+celdaF1_C5 -> celdaF1_C6
+celdaF1_C6 -> celdaF1_C7
+celdaF1_C7 -> celdaF1_C8
+celdaF1_C8 -> celdaF1_C9
+celdaF1_C9 -> celdaF1_C10
+celdaF1_C10 -> celdaF1_C11
+celdaF1_C11 -> celdaF1_C12
+celdaF1_C12 -> celdaF1_C13
+celdaF1_C13 -> celdaF1_C14
+celdaF1_C14 -> celdaF1_C15
+celdaF1_C15 -> celdaF1_C16
+celdaF1_C16 -> celdaF1_C17
+celdaF1_C17 -> celdaF1_C18
+celdaF1_C18 -> celdaF1_C19
+celdaF1_C19 -> celdaF1_C20
+F2 -> celdaF2_C1
+celdaF2_C1 -> celdaF2_C2
+celdaF2_C2 -> celdaF2_C3
+celdaF2_C3 -> celdaF2_C4
+celdaF2_C4 -> celdaF2_C5
+celdaF2_C5 -> celdaF2_C6
+celdaF2_C6 -> celdaF2_C7
+celdaF2_C7 -> celdaF2_C8
+celdaF2_C8 -> celdaF2_C9
+celdaF2_C9 -> celdaF2_C10
+celdaF2_C10 -> celdaF2_C11
+celdaF2_C11 -> celdaF2_C12
+celdaF2_C12 -> celdaF2_C13
+celdaF2_C13 -> celdaF2_C14
+celdaF2_C14 -> celdaF2_C15
+celdaF2_C15 -> celdaF2_C16
+celdaF2_C16 -> celdaF2_C17
+celdaF2_C17 -> celdaF2_C18
+celdaF2_C18 -> celdaF2_C19
+celdaF2_C19 -> celdaF2_C20
+F3 -> celdaF3_C1
+celdaF3_C1 -> celdaF3_C2
+celdaF3_C2 -> celdaF3_C3
+celdaF3_C3 -> celdaF3_C4
+celdaF3_C4 -> celdaF3_C5
+celdaF3_C5 -> celdaF3_C6
+celdaF3_C6 -> celdaF3_C7
+celdaF3_C7 -> celdaF3_C8
+celdaF3_C8 -> celdaF3_C9
+celdaF3_C9 -> celdaF3_C10
+celdaF3_C10 -> celdaF3_C11
+celdaF3_C11 -> celdaF3_C12
+celdaF3_C12 -> celdaF3_C13
+celdaF3_C13 -> celdaF3_C14
+celdaF3_C14 -> celdaF3_C15
+celdaF3_C15 -> celdaF3_C16
+celdaF3_C16 -> celdaF3_C17
+celdaF3_C17 -> celdaF3_C18
+celdaF3_C18 -> celdaF3_C19
+celdaF3_C19 -> celdaF3_C20
+F4 -> celdaF4_C1
+celdaF4_C1 -> celdaF4_C2
+celdaF4_C2 -> celdaF4_C3
+celdaF4_C3 -> celdaF4_C4
+celdaF4_C4 -> celdaF4_C5
+celdaF4_C5 -> celdaF4_C6
+celdaF4_C6 -> celdaF4_C7
+celdaF4_C7 -> celdaF4_C8
+celdaF4_C8 -> celdaF4_C9
+celdaF4_C9 -> celdaF4_C10
+celdaF4_C10 -> celdaF4_C11
+celdaF4_C11 -> celdaF4_C12
+celdaF4_C12 -> celdaF4_C13
+celdaF4_C13 -> celdaF4_C14
+celdaF4_C14 -> celdaF4_C15
+celdaF4_C15 -> celdaF4_C16
+celdaF4_C16 -> celdaF4_C17
+celdaF4_C17 -> celdaF4_C18
+celdaF4_C18 -> celdaF4_C19
+celdaF4_C19 -> celdaF4_C20
+F5 -> celdaF5_C1
+celdaF5_C1 -> celdaF5_C2
+celdaF5_C2 -> celdaF5_C3
+celdaF5_C3 -> celdaF5_C4
+celdaF5_C4 -> celdaF5_C5
+celdaF5_C5 -> celdaF5_C6
+celdaF5_C6 -> celdaF5_C7
+celdaF5_C7 -> celdaF5_C8
+celdaF5_C8 -> celdaF5_C9
+celdaF5_C9 -> celdaF5_C10
+celdaF5_C10 -> celdaF5_C11
+celdaF5_C11 -> celdaF5_C12
+celdaF5_C12 -> celdaF5_C13
+celdaF5_C13 -> celdaF5_C14
+celdaF5_C14 -> celdaF5_C15
+celdaF5_C15 -> celdaF5_C16
+celdaF5_C16 -> celdaF5_C17
+celdaF5_C17 -> celdaF5_C18
+celdaF5_C18 -> celdaF5_C19
+celdaF5_C19 -> celdaF5_C20
+F6 -> celdaF6_C1
+celdaF6_C1 -> celdaF6_C2
+celdaF6_C2 -> celdaF6_C3
+celdaF6_C3 -> celdaF6_C4
+celdaF6_C4 -> celdaF6_C5
+celdaF6_C5 -> celdaF6_C6
+celdaF6_C6 -> celdaF6_C7
+celdaF6_C7 -> celdaF6_C8
+celdaF6_C8 -> celdaF6_C9
+celdaF6_C9 -> celdaF6_C10
+celdaF6_C10 -> celdaF6_C11
+celdaF6_C11 -> celdaF6_C12
+celdaF6_C12 -> celdaF6_C13
+celdaF6_C13 -> celdaF6_C14
+celdaF6_C14 -> celdaF6_C15
+celdaF6_C15 -> celdaF6_C16
+celdaF6_C16 -> celdaF6_C17
+celdaF6_C17 -> celdaF6_C18
+celdaF6_C18 -> celdaF6_C19
+celdaF6_C19 -> celdaF6_C20
+F7 -> celdaF7_C1
+celdaF7_C1 -> celdaF7_C2
+celdaF7_C2 -> celdaF7_C3
+celdaF7_C3 -> celdaF7_C4
+celdaF7_C4 -> celdaF7_C5
+celdaF7_C5 -> celdaF7_C6
+celdaF7_C6 -> celdaF7_C7
+celdaF7_C7 -> celdaF7_C8
+celdaF7_C8 -> celdaF7_C9
+celdaF7_C9 -> celdaF7_C10
+celdaF7_C10 -> celdaF7_C11
+celdaF7_C11 -> celdaF7_C12
+celdaF7_C12 -> celdaF7_C13
+celdaF7_C13 -> celdaF7_C14
+celdaF7_C14 -> celdaF7_C15
+celdaF7_C15 -> celdaF7_C16
+celdaF7_C16 -> celdaF7_C17
+celdaF7_C17 -> celdaF7_C18
+celdaF7_C18 -> celdaF7_C19
+celdaF7_C19 -> celdaF7_C20
+F8 -> celdaF8_C1
+celdaF8_C1 -> celdaF8_C2
+celdaF8_C2 -> celdaF8_C3
+celdaF8_C3 -> celdaF8_C4
+celdaF8_C4 -> celdaF8_C5
+celdaF8_C5 -> celdaF8_C6
+celdaF8_C6 -> celdaF8_C7
+celdaF8_C7 -> celdaF8_C8
+celdaF8_C8 -> celdaF8_C9
+celdaF8_C9 -> celdaF8_C10
+celdaF8_C10 -> celdaF8_C11
+celdaF8_C11 -> celdaF8_C12
+celdaF8_C12 -> celdaF8_C13
+celdaF8_C13 -> celdaF8_C14
+celdaF8_C14 -> celdaF8_C15
+celdaF8_C15 -> celdaF8_C16
+celdaF8_C16 -> celdaF8_C17
+celdaF8_C17 -> celdaF8_C18
+celdaF8_C18 -> celdaF8_C19
+celdaF8_C19 -> celdaF8_C20
+F9 -> celdaF9_C1
+celdaF9_C1 -> celdaF9_C2
+celdaF9_C2 -> celdaF9_C3
+celdaF9_C3 -> celdaF9_C4
+celdaF9_C4 -> celdaF9_C5
+celdaF9_C5 -> celdaF9_C6
+celdaF9_C6 -> celdaF9_C7
+celdaF9_C7 -> celdaF9_C8
+celdaF9_C8 -> celdaF9_C9
+celdaF9_C9 -> celdaF9_C10
+celdaF9_C10 -> celdaF9_C11
+celdaF9_C11 -> celdaF9_C12
+celdaF9_C12 -> celdaF9_C13
+celdaF9_C13 -> celdaF9_C14
+celdaF9_C14 -> celdaF9_C15
+celdaF9_C15 -> celdaF9_C16
+celdaF9_C16 -> celdaF9_C17
+celdaF9_C17 -> celdaF9_C18
+celdaF9_C18 -> celdaF9_C19
+celdaF9_C19 -> celdaF9_C20
+F10 -> celdaF10_C1
+celdaF10_C1 -> celdaF10_C2
+celdaF10_C2 -> celdaF10_C3
+celdaF10_C3 -> celdaF10_C4
+celdaF10_C4 -> celdaF10_C5
+celdaF10_C5 -> celdaF10_C6
+celdaF10_C6 -> celdaF10_C7
+celdaF10_C7 -> celdaF10_C8
+celdaF10_C8 -> celdaF10_C9
+celdaF10_C9 -> celdaF10_C10
+celdaF10_C10 -> celdaF10_C11
+celdaF10_C11 -> celdaF10_C12
+celdaF10_C12 -> celdaF10_C13
+celdaF10_C13 -> celdaF10_C14
+celdaF10_C14 -> celdaF10_C15
+celdaF10_C15 -> celdaF10_C16
+celdaF10_C16 -> celdaF10_C17
+celdaF10_C17 -> celdaF10_C18
+celdaF10_C18 -> celdaF10_C19
+celdaF10_C19 -> celdaF10_C20
+F11 -> celdaF11_C1
+celdaF11_C1 -> celdaF11_C2
+celdaF11_C2 -> celdaF11_C3
+celdaF11_C3 -> celdaF11_C4
+celdaF11_C4 -> celdaF11_C5
+celdaF11_C5 -> celdaF11_C6
+celdaF11_C6 -> celdaF11_C7
+celdaF11_C7 -> celdaF11_C8
+celdaF11_C8 -> celdaF11_C9
+celdaF11_C9 -> celdaF11_C10
+celdaF11_C10 -> celdaF11_C11
+celdaF11_C11 -> celdaF11_C12
+celdaF11_C12 -> celdaF11_C13
+celdaF11_C13 -> celdaF11_C14
+celdaF11_C14 -> celdaF11_C15
+celdaF11_C15 -> celdaF11_C16
+celdaF11_C16 -> celdaF11_C17
+celdaF11_C17 -> celdaF11_C18
+celdaF11_C18 -> celdaF11_C19
+celdaF11_C19 -> celdaF11_C20
+F12 -> celdaF12_C1
+celdaF12_C1 -> celdaF12_C2
+celdaF12_C2 -> celdaF12_C3
+celdaF12_C3 -> celdaF12_C4
+celdaF12_C4 -> celdaF12_C5
+celdaF12_C5 -> celdaF12_C6
+celdaF12_C6 -> celdaF12_C7
+celdaF12_C7 -> celdaF12_C8
+celdaF12_C8 -> celdaF12_C9
+celdaF12_C9 -> celdaF12_C10
+celdaF12_C10 -> celdaF12_C11
+celdaF12_C11 -> celdaF12_C12
+celdaF12_C12 -> celdaF12_C13
+celdaF12_C13 -> celdaF12_C14
+celdaF12_C14 -> celdaF12_C15
+celdaF12_C15 -> celdaF12_C16
+celdaF12_C16 -> celdaF12_C17
+celdaF12_C17 -> celdaF12_C18
+celdaF12_C18 -> celdaF12_C19
+celdaF12_C19 -> celdaF12_C20
+F13 -> celdaF13_C1
+celdaF13_C1 -> celdaF13_C2
+celdaF13_C2 -> celdaF13_C3
+celdaF13_C3 -> celdaF13_C4
+celdaF13_C4 -> celdaF13_C5
+celdaF13_C5 -> celdaF13_C6
+celdaF13_C6 -> celdaF13_C7
+celdaF13_C7 -> celdaF13_C8
+celdaF13_C8 -> celdaF13_C9
+celdaF13_C9 -> celdaF13_C10
+celdaF13_C10 -> celdaF13_C11
+celdaF13_C11 -> celdaF13_C12
+celdaF13_C12 -> celdaF13_C13
+celdaF13_C13 -> celdaF13_C14
+celdaF13_C14 -> celdaF13_C15
+celdaF13_C15 -> celdaF13_C16
+celdaF13_C16 -> celdaF13_C17
+celdaF13_C17 -> celdaF13_C18
+celdaF13_C18 -> celdaF13_C19
+celdaF13_C19 -> celdaF13_C20
+F14 -> celdaF14_C1
+celdaF14_C1 -> celdaF14_C2
+celdaF14_C2 -> celdaF14_C3
+celdaF14_C3 -> celdaF14_C4
+celdaF14_C4 -> celdaF14_C5
+celdaF14_C5 -> celdaF14_C6
+celdaF14_C6 -> celdaF14_C7
+celdaF14_C7 -> celdaF14_C8
+celdaF14_C8 -> celdaF14_C9
+celdaF14_C9 -> celdaF14_C10
+celdaF14_C10 -> celdaF14_C11
+celdaF14_C11 -> celdaF14_C12
+celdaF14_C12 -> celdaF14_C13
+celdaF14_C13 -> celdaF14_C14
+celdaF14_C14 -> celdaF14_C15
+celdaF14_C15 -> celdaF14_C16
+celdaF14_C16 -> celdaF14_C17
+celdaF14_C17 -> celdaF14_C18
+celdaF14_C18 -> celdaF14_C19
+celdaF14_C19 -> celdaF14_C20
+F15 -> celdaF15_C1
+celdaF15_C1 -> celdaF15_C2
+celdaF15_C2 -> celdaF15_C3
+celdaF15_C3 -> celdaF15_C4
+celdaF15_C4 -> celdaF15_C5
+celdaF15_C5 -> celdaF15_C6
+celdaF15_C6 -> celdaF15_C7
+celdaF15_C7 -> celdaF15_C8
+celdaF15_C8 -> celdaF15_C9
+celdaF15_C9 -> celdaF15_C10
+celdaF15_C10 -> celdaF15_C11
+celdaF15_C11 -> celdaF15_C12
+celdaF15_C12 -> celdaF15_C13
+celdaF15_C13 -> celdaF15_C14
+celdaF15_C14 -> celdaF15_C15
+celdaF15_C15 -> celdaF15_C16
+celdaF15_C16 -> celdaF15_C17
+celdaF15_C17 -> celdaF15_C18
+celdaF15_C18 -> celdaF15_C19
+celdaF15_C19 -> celdaF15_C20
+F16 -> celdaF16_C1
+celdaF16_C1 -> celdaF16_C2
+celdaF16_C2 -> celdaF16_C3
+celdaF16_C3 -> celdaF16_C4
+celdaF16_C4 -> celdaF16_C5
+celdaF16_C5 -> celdaF16_C6
+celdaF16_C6 -> celdaF16_C7
+celdaF16_C7 -> celdaF16_C8
+celdaF16_C8 -> celdaF16_C9
+celdaF16_C9 -> celdaF16_C10
+celdaF16_C10 -> celdaF16_C11
+celdaF16_C11 -> celdaF16_C12
+celdaF16_C12 -> celdaF16_C13
+celdaF16_C13 -> celdaF16_C14
+celdaF16_C14 -> celdaF16_C15
+celdaF16_C15 -> celdaF16_C16
+celdaF16_C16 -> celdaF16_C17
+celdaF16_C17 -> celdaF16_C18
+celdaF16_C18 -> celdaF16_C19
+celdaF16_C19 -> celdaF16_C20
+F17 -> celdaF17_C1
+celdaF17_C1 -> celdaF17_C2
+celdaF17_C2 -> celdaF17_C3
+celdaF17_C3 -> celdaF17_C4
+celdaF17_C4 -> celdaF17_C5
+celdaF17_C5 -> celdaF17_C6
+celdaF17_C6 -> celdaF17_C7
+celdaF17_C7 -> celdaF17_C8
+celdaF17_C8 -> celdaF17_C9
+celdaF17_C9 -> celdaF17_C10
+celdaF17_C10 -> celdaF17_C11
+celdaF17_C11 -> celdaF17_C12
+celdaF17_C12 -> celdaF17_C13
+celdaF17_C13 -> celdaF17_C14
+celdaF17_C14 -> celdaF17_C15
+celdaF17_C15 -> celdaF17_C16
+celdaF17_C16 -> celdaF17_C17
+celdaF17_C17 -> celdaF17_C18
+celdaF17_C18 -> celdaF17_C19
+celdaF17_C19 -> celdaF17_C20
+F18 -> celdaF18_C1
+celdaF18_C1 -> celdaF18_C2
+celdaF18_C2 -> celdaF18_C3
+celdaF18_C3 -> celdaF18_C4
+celdaF18_C4 -> celdaF18_C5
+celdaF18_C5 -> celdaF18_C6
+celdaF18_C6 -> celdaF18_C7
+celdaF18_C7 -> celdaF18_C8
+celdaF18_C8 -> celdaF18_C9
+celdaF18_C9 -> celdaF18_C10
+celdaF18_C10 -> celdaF18_C11
+celdaF18_C11 -> celdaF18_C12
+celdaF18_C12 -> celdaF18_C13
+celdaF18_C13 -> celdaF18_C14
+celdaF18_C14 -> celdaF18_C15
+celdaF18_C15 -> celdaF18_C16
+celdaF18_C16 -> celdaF18_C17
+celdaF18_C17 -> celdaF18_C18
+celdaF18_C18 -> celdaF18_C19
+celdaF18_C19 -> celdaF18_C20
+F19 -> celdaF19_C1
+celdaF19_C1 -> celdaF19_C2
+celdaF19_C2 -> celdaF19_C3
+celdaF19_C3 -> celdaF19_C4
+celdaF19_C4 -> celdaF19_C5
+celdaF19_C5 -> celdaF19_C6
+celdaF19_C6 -> celdaF19_C7
+celdaF19_C7 -> celdaF19_C8
+celdaF19_C8 -> celdaF19_C9
+celdaF19_C9 -> celdaF19_C10
+celdaF19_C10 -> celdaF19_C11
+celdaF19_C11 -> celdaF19_C12
+celdaF19_C12 -> celdaF19_C13
+celdaF19_C13 -> celdaF19_C14
+celdaF19_C14 -> celdaF19_C15
+celdaF19_C15 -> celdaF19_C16
+celdaF19_C16 -> celdaF19_C17
+celdaF19_C17 -> celdaF19_C18
+celdaF19_C18 -> celdaF19_C19
+celdaF19_C19 -> celdaF19_C20
+F20 -> celdaF20_C1
+celdaF20_C1 -> celdaF20_C2
+celdaF20_C2 -> celdaF20_C3
+celdaF20_C3 -> celdaF20_C4
+celdaF20_C4 -> celdaF20_C5
+celdaF20_C5 -> celdaF20_C6
+celdaF20_C6 -> celdaF20_C7
+celdaF20_C7 -> celdaF20_C8
+celdaF20_C8 -> celdaF20_C9
+celdaF20_C9 -> celdaF20_C10
+celdaF20_C10 -> celdaF20_C11
+celdaF20_C11 -> celdaF20_C12
+celdaF20_C12 -> celdaF20_C13
+celdaF20_C13 -> celdaF20_C14
+celdaF20_C14 -> celdaF20_C15
+celdaF20_C15 -> celdaF20_C16
+celdaF20_C16 -> celdaF20_C17
+celdaF20_C17 -> celdaF20_C18
+celdaF20_C18 -> celdaF20_C19
+celdaF20_C19 -> celdaF20_C20
+C1-> celdaF1_C1
+celdaF1_C1-> celdaF2_C1
+celdaF2_C1-> celdaF3_C1
+celdaF3_C1-> celdaF4_C1
+celdaF4_C1-> celdaF5_C1
+celdaF5_C1-> celdaF6_C1
+celdaF6_C1-> celdaF7_C1
+celdaF7_C1-> celdaF8_C1
+celdaF8_C1-> celdaF9_C1
+celdaF9_C1-> celdaF10_C1
+celdaF10_C1-> celdaF11_C1
+celdaF11_C1-> celdaF12_C1
+celdaF12_C1-> celdaF13_C1
+celdaF13_C1-> celdaF14_C1
+celdaF14_C1-> celdaF15_C1
+celdaF15_C1-> celdaF16_C1
+celdaF16_C1-> celdaF17_C1
+celdaF17_C1-> celdaF18_C1
+celdaF18_C1-> celdaF19_C1
+celdaF19_C1-> celdaF20_C1
+C2-> celdaF1_C2
+celdaF1_C2-> celdaF2_C2
+celdaF2_C2-> celdaF3_C2
+celdaF3_C2-> celdaF4_C2
+celdaF4_C2-> celdaF5_C2
+celdaF5_C2-> celdaF6_C2
+celdaF6_C2-> celdaF7_C2
+celdaF7_C2-> celdaF8_C2
+celdaF8_C2-> celdaF9_C2
+celdaF9_C2-> celdaF10_C2
+celdaF10_C2-> celdaF11_C2
+celdaF11_C2-> celdaF12_C2
+celdaF12_C2-> celdaF13_C2
+celdaF13_C2-> celdaF14_C2
+celdaF14_C2-> celdaF15_C2
+celdaF15_C2-> celdaF16_C2
+celdaF16_C2-> celdaF17_C2
+celdaF17_C2-> celdaF18_C2
+celdaF18_C2-> celdaF19_C2
+celdaF19_C2-> celdaF20_C2
+C3-> celdaF1_C3
+celdaF1_C3-> celdaF2_C3
+celdaF2_C3-> celdaF3_C3
+celdaF3_C3-> celdaF4_C3
+celdaF4_C3-> celdaF5_C3
+celdaF5_C3-> celdaF6_C3
+celdaF6_C3-> celdaF7_C3
+celdaF7_C3-> celdaF8_C3
+celdaF8_C3-> celdaF9_C3
+celdaF9_C3-> celdaF10_C3
+celdaF10_C3-> celdaF11_C3
+celdaF11_C3-> celdaF12_C3
+celdaF12_C3-> celdaF13_C3
+celdaF13_C3-> celdaF14_C3
+celdaF14_C3-> celdaF15_C3
+celdaF15_C3-> celdaF16_C3
+celdaF16_C3-> celdaF17_C3
+celdaF17_C3-> celdaF18_C3
+celdaF18_C3-> celdaF19_C3
+celdaF19_C3-> celdaF20_C3
+C4-> celdaF1_C4
+celdaF1_C4-> celdaF2_C4
+celdaF2_C4-> celdaF3_C4
+celdaF3_C4-> celdaF4_C4
+celdaF4_C4-> celdaF5_C4
+celdaF5_C4-> celdaF6_C4
+celdaF6_C4-> celdaF7_C4
+celdaF7_C4-> celdaF8_C4
+celdaF8_C4-> celdaF9_C4
+celdaF9_C4-> celdaF10_C4
+celdaF10_C4-> celdaF11_C4
+celdaF11_C4-> celdaF12_C4
+celdaF12_C4-> celdaF13_C4
+celdaF13_C4-> celdaF14_C4
+celdaF14_C4-> celdaF15_C4
+celdaF15_C4-> celdaF16_C4
+celdaF16_C4-> celdaF17_C4
+celdaF17_C4-> celdaF18_C4
+celdaF18_C4-> celdaF19_C4
+celdaF19_C4-> celdaF20_C4
+C5-> celdaF1_C5
+celdaF1_C5-> celdaF2_C5
+celdaF2_C5-> celdaF3_C5
+celdaF3_C5-> celdaF4_C5
+celdaF4_C5-> celdaF5_C5
+celdaF5_C5-> celdaF6_C5
+celdaF6_C5-> celdaF7_C5
+celdaF7_C5-> celdaF8_C5
+celdaF8_C5-> celdaF9_C5
+celdaF9_C5-> celdaF10_C5
+celdaF10_C5-> celdaF11_C5
+celdaF11_C5-> celdaF12_C5
+celdaF12_C5-> celdaF13_C5
+celdaF13_C5-> celdaF14_C5
+celdaF14_C5-> celdaF15_C5
+celdaF15_C5-> celdaF16_C5
+celdaF16_C5-> celdaF17_C5
+celdaF17_C5-> celdaF18_C5
+celdaF18_C5-> celdaF19_C5
+celdaF19_C5-> celdaF20_C5
+C6-> celdaF1_C6
+celdaF1_C6-> celdaF2_C6
+celdaF2_C6-> celdaF3_C6
+celdaF3_C6-> celdaF4_C6
+celdaF4_C6-> celdaF5_C6
+celdaF5_C6-> celdaF6_C6
+celdaF6_C6-> celdaF7_C6
+celdaF7_C6-> celdaF8_C6
+celdaF8_C6-> celdaF9_C6
+celdaF9_C6-> celdaF10_C6
+celdaF10_C6-> celdaF11_C6
+celdaF11_C6-> celdaF12_C6
+celdaF12_C6-> celdaF13_C6
+celdaF13_C6-> celdaF14_C6
+celdaF14_C6-> celdaF15_C6
+celdaF15_C6-> celdaF16_C6
+celdaF16_C6-> celdaF17_C6
+celdaF17_C6-> celdaF18_C6
+celdaF18_C6-> celdaF19_C6
+celdaF19_C6-> celdaF20_C6
+C7-> celdaF1_C7
+celdaF1_C7-> celdaF2_C7
+celdaF2_C7-> celdaF3_C7
+celdaF3_C7-> celdaF4_C7
+celdaF4_C7-> celdaF5_C7
+celdaF5_C7-> celdaF6_C7
+celdaF6_C7-> celdaF7_C7
+celdaF7_C7-> celdaF8_C7
+celdaF8_C7-> celdaF9_C7
+celdaF9_C7-> celdaF10_C7
+celdaF10_C7-> celdaF11_C7
+celdaF11_C7-> celdaF12_C7
+celdaF12_C7-> celdaF13_C7
+celdaF13_C7-> celdaF14_C7
+celdaF14_C7-> celdaF15_C7
+celdaF15_C7-> celdaF16_C7
+celdaF16_C7-> celdaF17_C7
+celdaF17_C7-> celdaF18_C7
+celdaF18_C7-> celdaF19_C7
+celdaF19_C7-> celdaF20_C7
+C8-> celdaF1_C8
+celdaF1_C8-> celdaF2_C8
+celdaF2_C8-> celdaF3_C8
+celdaF3_C8-> celdaF4_C8
+celdaF4_C8-> celdaF5_C8
+celdaF5_C8-> celdaF6_C8
+celdaF6_C8-> celdaF7_C8
+celdaF7_C8-> celdaF8_C8
+celdaF8_C8-> celdaF9_C8
+celdaF9_C8-> celdaF10_C8
+celdaF10_C8-> celdaF11_C8
+celdaF11_C8-> celdaF12_C8
+celdaF12_C8-> celdaF13_C8
+celdaF13_C8-> celdaF14_C8
+celdaF14_C8-> celdaF15_C8
+celdaF15_C8-> celdaF16_C8
+celdaF16_C8-> celdaF17_C8
+celdaF17_C8-> celdaF18_C8
+celdaF18_C8-> celdaF19_C8
+celdaF19_C8-> celdaF20_C8
+C9-> celdaF1_C9
+celdaF1_C9-> celdaF2_C9
+celdaF2_C9-> celdaF3_C9
+celdaF3_C9-> celdaF4_C9
+celdaF4_C9-> celdaF5_C9
+celdaF5_C9-> celdaF6_C9
+celdaF6_C9-> celdaF7_C9
+celdaF7_C9-> celdaF8_C9
+celdaF8_C9-> celdaF9_C9
+celdaF9_C9-> celdaF10_C9
+celdaF10_C9-> celdaF11_C9
+celdaF11_C9-> celdaF12_C9
+celdaF12_C9-> celdaF13_C9
+celdaF13_C9-> celdaF14_C9
+celdaF14_C9-> celdaF15_C9
+celdaF15_C9-> celdaF16_C9
+celdaF16_C9-> celdaF17_C9
+celdaF17_C9-> celdaF18_C9
+celdaF18_C9-> celdaF19_C9
+celdaF19_C9-> celdaF20_C9
+C10-> celdaF1_C10
+celdaF1_C10-> celdaF2_C10
+celdaF2_C10-> celdaF3_C10
+celdaF3_C10-> celdaF4_C10
+celdaF4_C10-> celdaF5_C10
+celdaF5_C10-> celdaF6_C10
+celdaF6_C10-> celdaF7_C10
+celdaF7_C10-> celdaF8_C10
+celdaF8_C10-> celdaF9_C10
+celdaF9_C10-> celdaF10_C10
+celdaF10_C10-> celdaF11_C10
+celdaF11_C10-> celdaF12_C10
+celdaF12_C10-> celdaF13_C10
+celdaF13_C10-> celdaF14_C10
+celdaF14_C10-> celdaF15_C10
+celdaF15_C10-> celdaF16_C10
+celdaF16_C10-> celdaF17_C10
+celdaF17_C10-> celdaF18_C10
+celdaF18_C10-> celdaF19_C10
+celdaF19_C10-> celdaF20_C10
+C11-> celdaF1_C11
+celdaF1_C11-> celdaF2_C11
+celdaF2_C11-> celdaF3_C11
+celdaF3_C11-> celdaF4_C11
+celdaF4_C11-> celdaF5_C11
+celdaF5_C11-> celdaF6_C11
+celdaF6_C11-> celdaF7_C11
+celdaF7_C11-> celdaF8_C11
+celdaF8_C11-> celdaF9_C11
+celdaF9_C11-> celdaF10_C11
+celdaF10_C11-> celdaF11_C11
+celdaF11_C11-> celdaF12_C11
+celdaF12_C11-> celdaF13_C11
+celdaF13_C11-> celdaF14_C11
+celdaF14_C11-> celdaF15_C11
+celdaF15_C11-> celdaF16_C11
+celdaF16_C11-> celdaF17_C11
+celdaF17_C11-> celdaF18_C11
+celdaF18_C11-> celdaF19_C11
+celdaF19_C11-> celdaF20_C11
+C12-> celdaF1_C12
+celdaF1_C12-> celdaF2_C12
+celdaF2_C12-> celdaF3_C12
+celdaF3_C12-> celdaF4_C12
+celdaF4_C12-> celdaF5_C12
+celdaF5_C12-> celdaF6_C12
+celdaF6_C12-> celdaF7_C12
+celdaF7_C12-> celdaF8_C12
+celdaF8_C12-> celdaF9_C12
+celdaF9_C12-> celdaF10_C12
+celdaF10_C12-> celdaF11_C12
+celdaF11_C12-> celdaF12_C12
+celdaF12_C12-> celdaF13_C12
+celdaF13_C12-> celdaF14_C12
+celdaF14_C12-> celdaF15_C12
+celdaF15_C12-> celdaF16_C12
+celdaF16_C12-> celdaF17_C12
+celdaF17_C12-> celdaF18_C12
+celdaF18_C12-> celdaF19_C12
+celdaF19_C12-> celdaF20_C12
+C13-> celdaF1_C13
+celdaF1_C13-> celdaF2_C13
+celdaF2_C13-> celdaF3_C13
+celdaF3_C13-> celdaF4_C13
+celdaF4_C13-> celdaF5_C13
+celdaF5_C13-> celdaF6_C13
+celdaF6_C13-> celdaF7_C13
+celdaF7_C13-> celdaF8_C13
+celdaF8_C13-> celdaF9_C13
+celdaF9_C13-> celdaF10_C13
+celdaF10_C13-> celdaF11_C13
+celdaF11_C13-> celdaF12_C13
+celdaF12_C13-> celdaF13_C13
+celdaF13_C13-> celdaF14_C13
+celdaF14_C13-> celdaF15_C13
+celdaF15_C13-> celdaF16_C13
+celdaF16_C13-> celdaF17_C13
+celdaF17_C13-> celdaF18_C13
+celdaF18_C13-> celdaF19_C13
+celdaF19_C13-> celdaF20_C13
+C14-> celdaF1_C14
+celdaF1_C14-> celdaF2_C14
+celdaF2_C14-> celdaF3_C14
+celdaF3_C14-> celdaF4_C14
+celdaF4_C14-> celdaF5_C14
+celdaF5_C14-> celdaF6_C14
+celdaF6_C14-> celdaF7_C14
+celdaF7_C14-> celdaF8_C14
+celdaF8_C14-> celdaF9_C14
+celdaF9_C14-> celdaF10_C14
+celdaF10_C14-> celdaF11_C14
+celdaF11_C14-> celdaF12_C14
+celdaF12_C14-> celdaF13_C14
+celdaF13_C14-> celdaF14_C14
+celdaF14_C14-> celdaF15_C14
+celdaF15_C14-> celdaF16_C14
+celdaF16_C14-> celdaF17_C14
+celdaF17_C14-> celdaF18_C14
+celdaF18_C14-> celdaF19_C14
+celdaF19_C14-> celdaF20_C14
+C15-> celdaF1_C15
+celdaF1_C15-> celdaF2_C15
+celdaF2_C15-> celdaF3_C15
+celdaF3_C15-> celdaF4_C15
+celdaF4_C15-> celdaF5_C15
+celdaF5_C15-> celdaF6_C15
+celdaF6_C15-> celdaF7_C15
+celdaF7_C15-> celdaF8_C15
+celdaF8_C15-> celdaF9_C15
+celdaF9_C15-> celdaF10_C15
+celdaF10_C15-> celdaF11_C15
+celdaF11_C15-> celdaF12_C15
+celdaF12_C15-> celdaF13_C15
+celdaF13_C15-> celdaF14_C15
+celdaF14_C15-> celdaF15_C15
+celdaF15_C15-> celdaF16_C15
+celdaF16_C15-> celdaF17_C15
+celdaF17_C15-> celdaF18_C15
+celdaF18_C15-> celdaF19_C15
+celdaF19_C15-> celdaF20_C15
+C16-> celdaF1_C16
+celdaF1_C16-> celdaF2_C16
+celdaF2_C16-> celdaF3_C16
+celdaF3_C16-> celdaF4_C16
+celdaF4_C16-> celdaF5_C16
+celdaF5_C16-> celdaF6_C16
+celdaF6_C16-> celdaF7_C16
+celdaF7_C16-> celdaF8_C16
+celdaF8_C16-> celdaF9_C16
+celdaF9_C16-> celdaF10_C16
+celdaF10_C16-> celdaF11_C16
+celdaF11_C16-> celdaF12_C16
+celdaF12_C16-> celdaF13_C16
+celdaF13_C16-> celdaF14_C16
+celdaF14_C16-> celdaF15_C16
+celdaF15_C16-> celdaF16_C16
+celdaF16_C16-> celdaF17_C16
+celdaF17_C16-> celdaF18_C16
+celdaF18_C16-> celdaF19_C16
+celdaF19_C16-> celdaF20_C16
+C17-> celdaF1_C17
+celdaF1_C17-> celdaF2_C17
+celdaF2_C17-> celdaF3_C17
+celdaF3_C17-> celdaF4_C17
+celdaF4_C17-> celdaF5_C17
+celdaF5_C17-> celdaF6_C17
+celdaF6_C17-> celdaF7_C17
+celdaF7_C17-> celdaF8_C17
+celdaF8_C17-> celdaF9_C17
+celdaF9_C17-> celdaF10_C17
+celdaF10_C17-> celdaF11_C17
+celdaF11_C17-> celdaF12_C17
+celdaF12_C17-> celdaF13_C17
+celdaF13_C17-> celdaF14_C17
+celdaF14_C17-> celdaF15_C17
+celdaF15_C17-> celdaF16_C17
+celdaF16_C17-> celdaF17_C17
+celdaF17_C17-> celdaF18_C17
+celdaF18_C17-> celdaF19_C17
+celdaF19_C17-> celdaF20_C17
+C18-> celdaF1_C18
+celdaF1_C18-> celdaF2_C18
+celdaF2_C18-> celdaF3_C18
+celdaF3_C18-> celdaF4_C18
+celdaF4_C18-> celdaF5_C18
+celdaF5_C18-> celdaF6_C18
+celdaF6_C18-> celdaF7_C18
+celdaF7_C18-> celdaF8_C18
+celdaF8_C18-> celdaF9_C18
+celdaF9_C18-> celdaF10_C18
+celdaF10_C18-> celdaF11_C18
+celdaF11_C18-> celdaF12_C18
+celdaF12_C18-> celdaF13_C18
+celdaF13_C18-> celdaF14_C18
+celdaF14_C18-> celdaF15_C18
+celdaF15_C18-> celdaF16_C18
+celdaF16_C18-> celdaF17_C18
+celdaF17_C18-> celdaF18_C18
+celdaF18_C18-> celdaF19_C18
+celdaF19_C18-> celdaF20_C18
+C19-> celdaF1_C19
+celdaF1_C19-> celdaF2_C19
+celdaF2_C19-> celdaF3_C19
+celdaF3_C19-> celdaF4_C19
+celdaF4_C19-> celdaF5_C19
+celdaF5_C19-> celdaF6_C19
+celdaF6_C19-> celdaF7_C19
+celdaF7_C19-> celdaF8_C19
+celdaF8_C19-> celdaF9_C19
+celdaF9_C19-> celdaF10_C19
+celdaF10_C19-> celdaF11_C19
+celdaF11_C19-> celdaF12_C19
+celdaF12_C19-> celdaF13_C19
+celdaF13_C19-> celdaF14_C19
+celdaF14_C19-> celdaF15_C19
+celdaF15_C19-> celdaF16_C19
+celdaF16_C19-> celdaF17_C19
+celdaF17_C19-> celdaF18_C19
+celdaF18_C19-> celdaF19_C19
+celdaF19_C19-> celdaF20_C19
+C20-> celdaF1_C20
+celdaF1_C20-> celdaF2_C20
+celdaF2_C20-> celdaF3_C20
+celdaF3_C20-> celdaF4_C20
+celdaF4_C20-> celdaF5_C20
+celdaF5_C20-> celdaF6_C20
+celdaF6_C20-> celdaF7_C20
+celdaF7_C20-> celdaF8_C20
+celdaF8_C20-> celdaF9_C20
+celdaF9_C20-> celdaF10_C20
+celdaF10_C20-> celdaF11_C20
+celdaF11_C20-> celdaF12_C20
+celdaF12_C20-> celdaF13_C20
+celdaF13_C20-> celdaF14_C20
+celdaF14_C20-> celdaF15_C20
+celdaF15_C20-> celdaF16_C20
+celdaF16_C20-> celdaF17_C20
+celdaF17_C20-> celdaF18_C20
+celdaF18_C20-> celdaF19_C20
+celdaF19_C20-> celdaF20_C20
+ {rank = same; F1, celdaF1_C1, celdaF1_C2, celdaF1_C3, celdaF1_C4, celdaF1_C5, celdaF1_C6, celdaF1_C7, celdaF1_C8, celdaF1_C9, celdaF1_C10, celdaF1_C11, celdaF1_C12, celdaF1_C13, celdaF1_C14, celdaF1_C15, celdaF1_C16, celdaF1_C17, celdaF1_C18, celdaF1_C19, celdaF1_C20}
+ {rank = same; F2, celdaF2_C1, celdaF2_C2, celdaF2_C3, celdaF2_C4, celdaF2_C5, celdaF2_C6, celdaF2_C7, celdaF2_C8, celdaF2_C9, celdaF2_C10, celdaF2_C11, celdaF2_C12, celdaF2_C13, celdaF2_C14, celdaF2_C15, celdaF2_C16, celdaF2_C17, celdaF2_C18, celdaF2_C19, celdaF2_C20}
+ {rank = same; F3, celdaF3_C1, celdaF3_C2, celdaF3_C3, celdaF3_C4, celdaF3_C5, celdaF3_C6, celdaF3_C7, celdaF3_C8, celdaF3_C9, celdaF3_C10, celdaF3_C11, celdaF3_C12, celdaF3_C13, celdaF3_C14, celdaF3_C15, celdaF3_C16, celdaF3_C17, celdaF3_C18, celdaF3_C19, celdaF3_C20}
+ {rank = same; F4, celdaF4_C1, celdaF4_C2, celdaF4_C3, celdaF4_C4, celdaF4_C5, celdaF4_C6, celdaF4_C7, celdaF4_C8, celdaF4_C9, celdaF4_C10, celdaF4_C11, celdaF4_C12, celdaF4_C13, celdaF4_C14, celdaF4_C15, celdaF4_C16, celdaF4_C17, celdaF4_C18, celdaF4_C19, celdaF4_C20}
+ {rank = same; F5, celdaF5_C1, celdaF5_C2, celdaF5_C3, celdaF5_C4, celdaF5_C5, celdaF5_C6, celdaF5_C7, celdaF5_C8, celdaF5_C9, celdaF5_C10, celdaF5_C11, celdaF5_C12, celdaF5_C13, celdaF5_C14, celdaF5_C15, celdaF5_C16, celdaF5_C17, celdaF5_C18, celdaF5_C19, celdaF5_C20}
+ {rank = same; F6, celdaF6_C1, celdaF6_C2, celdaF6_C3, celdaF6_C4, celdaF6_C5, celdaF6_C6, celdaF6_C7, celdaF6_C8, celdaF6_C9, celdaF6_C10, celdaF6_C11, celdaF6_C12, celdaF6_C13, celdaF6_C14, celdaF6_C15, celdaF6_C16, celdaF6_C17, celdaF6_C18, celdaF6_C19, celdaF6_C20}
+ {rank = same; F7, celdaF7_C1, celdaF7_C2, celdaF7_C3, celdaF7_C4, celdaF7_C5, celdaF7_C6, celdaF7_C7, celdaF7_C8, celdaF7_C9, celdaF7_C10, celdaF7_C11, celdaF7_C12, celdaF7_C13, celdaF7_C14, celdaF7_C15, celdaF7_C16, celdaF7_C17, celdaF7_C18, celdaF7_C19, celdaF7_C20}
+ {rank = same; F8, celdaF8_C1, celdaF8_C2, celdaF8_C3, celdaF8_C4, celdaF8_C5, celdaF8_C6, celdaF8_C7, celdaF8_C8, celdaF8_C9, celdaF8_C10, celdaF8_C11, celdaF8_C12, celdaF8_C13, celdaF8_C14, celdaF8_C15, celdaF8_C16, celdaF8_C17, celdaF8_C18, celdaF8_C19, celdaF8_C20}
+ {rank = same; F9, celdaF9_C1, celdaF9_C2, celdaF9_C3, celdaF9_C4, celdaF9_C5, celdaF9_C6, celdaF9_C7, celdaF9_C8, celdaF9_C9, celdaF9_C10, celdaF9_C11, celdaF9_C12, celdaF9_C13, celdaF9_C14, celdaF9_C15, celdaF9_C16, celdaF9_C17, celdaF9_C18, celdaF9_C19, celdaF9_C20}
+ {rank = same; F10, celdaF10_C1, celdaF10_C2, celdaF10_C3, celdaF10_C4, celdaF10_C5, celdaF10_C6, celdaF10_C7, celdaF10_C8, celdaF10_C9, celdaF10_C10, celdaF10_C11, celdaF10_C12, celdaF10_C13, celdaF10_C14, celdaF10_C15, celdaF10_C16, celdaF10_C17, celdaF10_C18, celdaF10_C19, celdaF10_C20}
+ {rank = same; F11, celdaF11_C1, celdaF11_C2, celdaF11_C3, celdaF11_C4, celdaF11_C5, celdaF11_C6, celdaF11_C7, celdaF11_C8, celdaF11_C9, celdaF11_C10, celdaF11_C11, celdaF11_C12, celdaF11_C13, celdaF11_C14, celdaF11_C15, celdaF11_C16, celdaF11_C17, celdaF11_C18, celdaF11_C19, celdaF11_C20}
+ {rank = same; F12, celdaF12_C1, celdaF12_C2, celdaF12_C3, celdaF12_C4, celdaF12_C5, celdaF12_C6, celdaF12_C7, celdaF12_C8, celdaF12_C9, celdaF12_C10, celdaF12_C11, celdaF12_C12, celdaF12_C13, celdaF12_C14, celdaF12_C15, celdaF12_C16, celdaF12_C17, celdaF12_C18, celdaF12_C19, celdaF12_C20}
+ {rank = same; F13, celdaF13_C1, celdaF13_C2, celdaF13_C3, celdaF13_C4, celdaF13_C5, celdaF13_C6, celdaF13_C7, celdaF13_C8, celdaF13_C9, celdaF13_C10, celdaF13_C11, celdaF13_C12, celdaF13_C13, celdaF13_C14, celdaF13_C15, celdaF13_C16, celdaF13_C17, celdaF13_C18, celdaF13_C19, celdaF13_C20}
+ {rank = same; F14, celdaF14_C1, celdaF14_C2, celdaF14_C3, celdaF14_C4, celdaF14_C5, celdaF14_C6, celdaF14_C7, celdaF14_C8, celdaF14_C9, celdaF14_C10, celdaF14_C11, celdaF14_C12, celdaF14_C13, celdaF14_C14, celdaF14_C15, celdaF14_C16, celdaF14_C17, celdaF14_C18, celdaF14_C19, celdaF14_C20}
+ {rank = same; F15, celdaF15_C1, celdaF15_C2, celdaF15_C3, celdaF15_C4, celdaF15_C5, celdaF15_C6, celdaF15_C7, celdaF15_C8, celdaF15_C9, celdaF15_C10, celdaF15_C11, celdaF15_C12, celdaF15_C13, celdaF15_C14, celdaF15_C15, celdaF15_C16, celdaF15_C17, celdaF15_C18, celdaF15_C19, celdaF15_C20}
+ {rank = same; F16, celdaF16_C1, celdaF16_C2, celdaF16_C3, celdaF16_C4, celdaF16_C5, celdaF16_C6, celdaF16_C7, celdaF16_C8, celdaF16_C9, celdaF16_C10, celdaF16_C11, celdaF16_C12, celdaF16_C13, celdaF16_C14, celdaF16_C15, celdaF16_C16, celdaF16_C17, celdaF16_C18, celdaF16_C19, celdaF16_C20}
+ {rank = same; F17, celdaF17_C1, celdaF17_C2, celdaF17_C3, celdaF17_C4, celdaF17_C5, celdaF17_C6, celdaF17_C7, celdaF17_C8, celdaF17_C9, celdaF17_C10, celdaF17_C11, celdaF17_C12, celdaF17_C13, celdaF17_C14, celdaF17_C15, celdaF17_C16, celdaF17_C17, celdaF17_C18, celdaF17_C19, celdaF17_C20}
+ {rank = same; F18, celdaF18_C1, celdaF18_C2, celdaF18_C3, celdaF18_C4, celdaF18_C5, celdaF18_C6, celdaF18_C7, celdaF18_C8, celdaF18_C9, celdaF18_C10, celdaF18_C11, celdaF18_C12, celdaF18_C13, celdaF18_C14, celdaF18_C15, celdaF18_C16, celdaF18_C17, celdaF18_C18, celdaF18_C19, celdaF18_C20}
+ {rank = same; F19, celdaF19_C1, celdaF19_C2, celdaF19_C3, celdaF19_C4, celdaF19_C5, celdaF19_C6, celdaF19_C7, celdaF19_C8, celdaF19_C9, celdaF19_C10, celdaF19_C11, celdaF19_C12, celdaF19_C13, celdaF19_C14, celdaF19_C15, celdaF19_C16, celdaF19_C17, celdaF19_C18, celdaF19_C19, celdaF19_C20}
+ {rank = same; F20, celdaF20_C1, celdaF20_C2, celdaF20_C3, celdaF20_C4, celdaF20_C5, celdaF20_C6, celdaF20_C7, celdaF20_C8, celdaF20_C9, celdaF20_C10, celdaF20_C11, celdaF20_C12, celdaF20_C13, celdaF20_C14, celdaF20_C15, celdaF20_C16, celdaF20_C17, celdaF20_C18, celdaF20_C19, celdaF20_C20}}
+}
