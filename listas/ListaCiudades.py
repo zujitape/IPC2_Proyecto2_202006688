@@ -1,4 +1,4 @@
-from NodoCiudad import nodoCiudad
+from listas.NodoCiudad import nodoCiudad
 
 class listaCiudades():
     def __init__(self):
@@ -21,7 +21,7 @@ class listaCiudades():
     def mostrarCiudades(self):
         tmp = self.primero
         while tmp != None:
-            print("▷ ", tmp.nombre, "- > (",tmp.nFilas, ",", tmp.nColumnas, ")\nNúmero de unidades civiles: ", tmp.noUCiviles, "\nNúmero de recursos de la ciudad: ", tmp.noRecursos, "\n")
+            print("\n ▷ ", tmp.nombre, "- > (",tmp.nFilas, ",", tmp.nColumnas, ")\n Número de unidades civiles: ", tmp.noUCiviles, "\n Número de recursos de la ciudad: ", tmp.noRecursos)
             tmp = tmp.siguiente
     
     def buscarCiudad(self, name):
@@ -37,4 +37,8 @@ class listaCiudades():
             if tmp.nombre == name:
                 return tmp.matriz.graficarMatriz()
             tmp = tmp.getSiguiente()
+    
+    
+    
+    
 

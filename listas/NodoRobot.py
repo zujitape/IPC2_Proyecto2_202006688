@@ -2,7 +2,7 @@ class nodoRobot():
     def __init__(self, nombre, tipo, capacidad):
         self.nombre = nombre
         self.tipo = tipo
-        self.capacidad = 0
+        self.capacidad = capacidad
         self.siguiente = None
 
     def getSiguiente(self):
@@ -16,5 +16,6 @@ class nodoRobot():
 
     def setCapacidad(self, capacidad):
         self.capacidad = capacidad
+    
     
     

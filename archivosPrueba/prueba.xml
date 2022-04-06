@@ -5,8 +5,14 @@
         <nombre filas="4" columnas="20">Guatemala</nombre>
         <fila numero="1">"********************"</fila>
         <fila numero="2">"*** **             *"</fila>
-        <fila numero="3">"*** *****E*****C****"</fila>
-        <fila numero="4">"*** ***** ***** ***R"</fila>
+        <fila numero="3">"*** *****E**********"</fila>
+        <fila numero="4">"*** ***** ***** ****"</fila>
     </ciudad>
 </listaCiudades>
+<robots>
+        <robot>
+            <nombre tipo="ChapinRescue">Rescatador1</nombre>
+            <nombre tipo="ChapinFighter" capacidad="50">fighter1</nombre>
+        </robot>
+    </robots>
 </configuracion>

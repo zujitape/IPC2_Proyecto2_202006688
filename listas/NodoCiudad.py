@@ -1,5 +1,5 @@
 from matrizDispersa.MatrizDispersa import matrizDispersa
-from ListaRobots import listaRobots
+from listas.ListaRobots import listaRobots
 
 class nodoCiudad():
     def __init__(self, nombre, nFilas, nColumnas):
@@ -8,6 +8,8 @@ class nodoCiudad():
         self.nColumnas = nColumnas
         self.noUCiviles = 0
         self.noRecursos = 0
+        self.noChapinF = 0
+        self.noChapinR = 0
         self.matriz = matrizDispersa()
         self.robots = listaRobots()
         self.siguiente = None
@@ -33,6 +35,19 @@ class nodoCiudad():
     
     def setNoUC(self, uCiviles):
         self.noUCiviles = uCiviles
+
+    def getNoUC(self):
+        return self.noUCiviles
     
     def setNoRecursos(self, recursos):
         self.noRecursos = recursos
+    
+    def getNoR(self):
+        return self.noRecursos
+    
+    def setNoChapinF(self, noChapinR):
+        self.noChapinR = noChapinR
+    
+    def setNoChapinR(self, noChapinF):
+        self.noChapinF = noChapinF
+    

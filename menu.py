@@ -2,8 +2,8 @@ from tkinter.filedialog import askopenfilename
 import pathlib
 import time
 from typing import List
-from ListaCiudades import listaCiudades
-from ListaRobots import listaRobots
+from listas.ListaCiudades import listaCiudades
+from listas.ListaRobots import listaRobots
 from xml.dom import minidom
 
 ListaCiudades = listaCiudades()
@@ -88,29 +88,42 @@ def MiniDom(ruta):
     
     #robots del archivo
         robot = mydoc.getElementsByTagName('robot')
-        for r in robot:
+        if robot != None:
+            noCF = nuevaCiudad.noChapinF
+            noCR = nuevaCiudad.noChapinR
 
-            capacidadR = 0
+            for r in robot:
 
-            nombreR = r.getElementsByTagName('nombre')
-            for nR in nombreR:
-                nombreRobot = nR.firstChild.data
-                tipoRobot = nR.attributes['tipo'].value
+                capacidadR = 0
 
-                if tipoRobot == "ChapinFighter":
-                    capacidadR = nR.attributes['capacidad'].value
-                else:
-                    capacidadR = 0
+                nombreR = r.getElementsByTagName('nombre')
+                for nR in nombreR:
+                    nombreRobot = nR.firstChild.data
+                    tipoRobot = nR.attributes['tipo'].value
+                    if tipoRobot == "ChapinFighter":
+                        capacidadR = nR.attributes['capacidad'].value
+                        noCF += 1
+                    else:
+                        capacidadR = 0
+                        noCR += 1
 
-                nuevaCiudad.robots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
+                    nuevaCiudad.robots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
+                ListaRobots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
+                    
+            nuevaCiudad.setNoChapinF(noCF)
+            nuevaCiudad.setNoChapinR(noCR)
+        else:
+            print("No hay etiquetas de robot en el xml.")
             
-        ListaRobots.insertarRobot(nombreRobot, tipoRobot, capacidadR)
+            
 
-    print("\n  ----- CIUDADES AGREGADAS -----")
+    print("\n╔═══════ LISTA DE CIUDADES ═══════╗")
     ListaCiudades.mostrarCiudades()
+    print("╚═══════════════════════════════════╝")
 
-    print("\n ----- ROBOTS AGREGADAS -----")
+    print("\n╔═══════ LISTA DE ROBOTS ═══════╗")
     nuevaCiudad.robots.mostrarRobots()
+    print("╚═════════════════════════════════╝")
     
 
     
@@ -118,45 +131,170 @@ def MiniDom(ruta):
 salir = False
 opcion = 0
 
+
+optMision = 0
+
 while not salir:
     print('')
-    print('¡BIENVENIDO! \n 1. Cargar archivo. \n 2. Mostrar lista de ciudades.  \n 3. Mostrar lista de robots. \n 4. Ver una ciudad. \n 5. Salir.')
+    print('║¯¯¯¯¯¯¯¯¯¯¯¯ MENÚ ¯¯¯¯¯¯¯¯¯¯¯¯¯║\n║ 1. Cargar archivo.            ║\n║ 2. Mostrar lista de ciudades. ║ \n║ 3. Mostrar lista de robots.   ║\n║ 4. Ver gráfica de una ciudad. ║\n║ 5. Asignar una misión         ║\n║ 6. Salir.                     ║\n║-------------------------------║')
 
-    opcion = seleccionarOpt("¿Qué opción quiere seleccionar? ")
+    opcion = seleccionarOpt("➔ ¿Qué opción quiere seleccionar? ")
 
     if opcion == 1:
-        print("\n .:*・°☆CARGAR LISTA DE CIUDADES☆.。.:")
-        data = askopenfilename()
-        path = pathlib.Path(data)
-        if (path.suffix == '.xml'):
-            codigo = MiniDom(data)
-        else:
-            print('ERROR: Seleccionó un tipo de archivo no permitido.')
+        print("\n .:*・°.*: CARGAR LISTA DE CIUDADES :*.°・*:.")
+        try:
+            data = askopenfilename()
+            path = pathlib.Path(data)
+            if (path.suffix == '.xml'):
+                codigo = MiniDom(data)
+            else:
+                print('ERROR: Seleccionó un tipo de archivo no permitido.')
+        except:
+            print('Asegúrese de que el archivo tenga estructura correcta.')
         
     elif opcion == 2:
-        try:
-            print("\nLista de ciudades: ")
-            ListaCiudades.mostrarCiudades()
-        except:
-            print("¿Ya cargó un archivo al sistema?")
+        if ListaCiudades.size >0:
+            try:
+                print("\n|  Lista de ciudades:  |")
+                ListaCiudades.mostrarCiudades()
+            except:
+                print("¿Ya cargó un archivo al sistema?")
+        
 
     elif opcion == 3:
-            print("\nLista de robots: ")
-            
-            ListaRobots.mostrarRobots()
+            name = input("\n➔ Ver robots disponibles de la ciudad: ")
+            ciudad = ListaCiudades.buscarCiudad(name)
+            if ciudad != None:
+                if (ciudad.robots.size>0):
+                    print("\n|  Lista de robots de ", ciudad.getNombre(), "  |")
+                    ciudad.robots.mostrarRobots()
+                else: 
+                    print("Esta ciudad no tiene robots disponibles.")
+            else:
+                print("Asegúrese de que el nombre ingresado sea correcto.")
+                opcion == 3
 
+        
     elif opcion == 4:
-            name = input("\nIngrese el nombre de la ciudad que verá: ")
+            name = input("\n➔ Ingrese el nombre de la ciudad que verá: ")
             ciudad = ListaCiudades.buscarCiudad(name)
 
             if ciudad == None:
                 print("Asegúrese de que el nombre ingresado sea correcto.")
             
             else:
-                print("\n", ciudad.getNombre())
+                print("\nEstamos generando la gráfica de", ciudad.getNombre())
                 ciudad.matriz.graficarMatriz(ciudad.getNombre())
 
+
     elif opcion == 5:
+        nombreCiudad = input("\n➔ Ingrese el nombre de la ciudad a la que asignará la misión: ")
+        ciudad = ListaCiudades.buscarCiudad(nombreCiudad)
+
+        if ciudad != None:
+            salirMision = False
+            print("\n .:*・°.*: MISIÓN EN "+ str(ciudad.getNombre()).upper() + " :*.°・*:.\n║ 1. Misión de rescate.                    ║\n║ 2. Misión de extracción de recursos.     ║\n║ 3. Regresar al menú principal.           ║")
+            optMision = seleccionarOpt("\n➔ Seleccione el tipo de misión que quiere realizar: ")
+            print("")
+
+            while not salirMision:
+                if optMision == 1:
+                    #ROBOT PARA LA MISIÓN DE RESCATE-----------------
+                    tipo = "ChapinRescue" 
+                    coordX = 0
+                    coordY = 0
+                    cr = ciudad.robots.verDisponibilidad(tipo) #cr -> almacena la cantidad de robots "ChapinRescue" de la ciudad
+                    if cr == 0:
+                        print("Esta ciudad no tiene robots disponibles para la misión.")
+                        break
+                    elif cr == 1:
+                        robot = ciudad.robots.primero.nombre
+                        print(robot, ", ¡está listo para ir al rescate!")
+                        #robot será el primero de la lista
+                    else:
+                        print("\nRobots disponibles: ")
+                        ciudad.robots.verTipo(tipo)
+                        robot = input("\n➔ Ingrese el nombre del robot que realizará la misión: ")
+                        print(robot,", ¡está listo para ir al rescate!")
+                        #robot será el seleccionado por el usuario
+                    
+                    #UNIDAD CIVIL QUE SE RESCATARÁ------------------------
+                    uc = ciudad.getNoUC()
+                    if uc == 0:
+                        print("No hay unidades civiles para rescatar.")
+                        break
+                    else:
+                        print("\nUnidades civiles de ", ciudad.getNombre())
+                        print("[ x , y ]")
+                        ciudad.matriz.verTipoCelda("C")
+                        print("\nIngrese las coordendas de la unidad civil que se rescatará")
+                        coordX = input("➔ Coordenada x: ")
+                        coordY = input("➔ Coordenada y: ")  
+                        
+                        print("Se rescatará la unidad civil de la celda [", coordX,",",coordY,"]")
+                    
+                    print("\nPuntos de entrada en ", ciudad.getNombre())
+                    print("[ x , y ]")
+                    ciudad.matriz.verTipoCelda("PE")
+                    print("\nIngrese las coordendas del punto de entrada")
+                    coordXPE = input("➔ Coordenada x: ")
+                    coordYPE = input("➔ Coordenada y: ")  
+                    print("Punto de partida [", coordXPE,",",coordYPE,"]")
+                    txt = "Unidad civil rescatada: "
+                    
+                    ciudad.matriz.graficar(ciudad.getNombre(), "Rescate", tipo, robot, coordX, coordY, txt)
+                    break
+                elif optMision == 2:
+                    #ROBOT PARA LA MISIÓN DE RESCATE-----------------
+                    tipo = "ChapinFighter" 
+                    coordX = 0
+                    coordY = 0
+                    cr = ciudad.robots.verDisponibilidad(tipo) #cr -> almacena la cantidad de robots "ChapinFighter" de la ciudad
+                    if cr == 0:
+                        print("Esta ciudad no tiene robots disponibles para la misión.")
+                        break
+                    elif cr == 1:
+                        robot = ciudad.robots.primero.nombre
+                        print(robot, ", ¡está listo para ir a la extracción!")
+                        #robot será el primero de la lista
+                    else:
+                        print("\nRobots disponibles: ")
+                        ciudad.robots.verTipo(tipo)
+                        robot = input("\n➔ Ingrese el nombre del robot que realizará la misión: ")
+                        print(robot,", ¡está listo para ir a la extracción!")
+                        #robot será el seleccionado por el usuario
+                    
+                    #UNIDAD CIVIL QUE SE RESCATARÁ------------------------
+                    nr = ciudad.getNoR()
+                    if nr == 0:
+                        print("No hay recursos para extraer.")
+                        break
+                    else:
+                        print("\nRecursos de ", ciudad.getNombre())
+                        print("[ x , y ]")
+                        ciudad.matriz.verTipoCelda("R")
+                        print("\nIngrese las coordendas del recurso que se extraerá")
+                        coordX = input("➔ Coordenada x: ")
+                        coordY = input("➔ Coordenada y: ")  
+                        print("Se extraerá el recurso de la celda [", coordX,",",coordY,"]")
+                    
+                    print("\nPuntos de entrada en ", ciudad.getNombre())
+                    print("[ x , y ]")
+                    ciudad.matriz.verTipoCelda("PE")
+                    print("\nIngrese las coordendas del punto de entrada")
+                    coordXPE = input("➔ Coordenada x: ")
+                    coordYPE = input("➔ Coordenada y: ")  
+                    print("Punto de partida [", coordXPE,",",coordYPE,"]")
+
+                    txt = "Recurso extraido: "
+                    ciudad.matriz.graficar(ciudad.getNombre(), "Extraccion", tipo, robot, coordX, coordY, txt)
+                    break
+                elif optMision == 3:
+                    salirMision = True
+            
+        else:
+            print("Asegúrese de ingresar un nombre correcto.")
+    elif opcion == 6:
         print("Saliendo... :b")
         time.sleep(0.5)
         salir = True
